@@ -2,6 +2,8 @@
 
 Starter site for creating slideshow presentations using [reveal.js](https://github.com/hakimel/reveal.js). Designed specifically to work in the context of [GitHub Pages](https://pages.github.com/) using [Jekyll](https://jekyllrb.com/).
 
+You can see this starter live [here](http://www.thomasleen.com/revelare).
+
 This is a *starter* for a slideshow presentation, you can reasonably expect to have to modify the [configuration](_config.yml) and [styling](index.scss). Most of all you will have to author your own [slides](_slides), although there are a few example slides to get you started. 
 
 ## Slides
