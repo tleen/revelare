@@ -1,0 +1,22 @@
+---
+---
+<div class="reveal">
+  <div class="slides">
+    {% assign ordering = site.ordering | split: ',' %}
+    {% for order in ordering %}
+      {% assign group = site.slides | where: 'group', order | sort: 'order' %}
+    <section>
+      {% if group.size == 1 %}
+      {{ group[0].output }}
+      {% else %}
+        {% for slide in group %}
+      <section>{{ slide.output }}</section>
+        {% endfor %}
+      {% endif %}
+    </section>
+    {% endfor %}
+  </div>
+</div>
+<script>
+{% include slideshow.js %}
+</script>

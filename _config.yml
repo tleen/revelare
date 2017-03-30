@@ -1,0 +1,18 @@
+title : Revelare
+description: Example website for a Revelare slideshow
+ordering: "splash,introduction,image-example,code-example,finale"
+revealjs:
+  theme: 'sky'
+collections:
+  slides:
+    output : false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: slides
+    values:
+      layout: "none"
